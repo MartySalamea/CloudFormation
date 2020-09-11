@@ -14,7 +14,7 @@
             "Description": "Name of the sample Amazon S3 bucket."
             "WebsiteConfiguration": {
                     "IndexDocument": "index.html",
-                    "ErrorDocument": "error.html"
+                    
         }
     }
 }
