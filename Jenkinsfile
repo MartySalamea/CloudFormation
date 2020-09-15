@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Submit Stack') {
             steps {
-            sh "aws cloudformation create-stack --stack-name mybycket2 --template-body file://cfn-deploy-to-s3 --region 'us-east-1'"
+            sh "aws cloudformation create-stack --stack-name mybycket2 --template-body file://ec2-cfn-jenkins --region 'us-east-1'"
               }
              }
             }
