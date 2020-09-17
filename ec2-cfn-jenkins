@@ -11,14 +11,14 @@ Parameters:
 Mappings:
   SubnetMap:
     us-east-1:
-      PublicSubnet:  subnet-8614b4e0
-      PrivateSubnet: subnet-096791a493350a7c5
+      PublicSubnet:  subnet-0ef0b78ab5fa67514
+      PrivateSubnet: subnet-00b68dae8a4c47c8a
       LinuxImg: ami-0c94855ba95c71c99
 Resources:
   myEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      KeyName: chicago-new-pair
+      KeyName: virginia-key
       SubnetId: !FindInMap [SubnetMap, !Ref "AWS::Region", !Ref SubnetType ]
       ImageId: !FindInMap [SubnetMap, !Ref "AWS::Region", LinuxImg ]
       InstanceType: t2.micro
